@@ -13,3 +13,4 @@
     ~/.Xresources:
     ~/.xinitrc:
     ~/.config/sxhkd/sxhkdrc: sxhkdrc
+    ~/.config/rofi/config.rasi: rofi.config.rasi
