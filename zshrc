@@ -88,18 +88,11 @@ bindkey '^[[Z' undo             # Shift+tab undo last action
 alias cp="cp -i"     # Confirm before overwriting something
 alias df='df -h'     # Human-readable sizes
 alias free='free -m' # Show sizes in MB
-alias scons="scons -Q -j8"
-alias bg="wal -b '#151515' -i"
 alias xclip="xclip -selection clipboard"
-alias lpm="lpr-ssh 10.0.0.9"
-alias scc="scc --no-cocomo"
 alias paru="paru --skipreview"
 
 # overriding commands
 alias ls="exa"
-
-# new commands
-alias home='git --work-tree=$HOME --git-dir=$HOME/.home'  # :: "separate git-instance" for tracking dotfiles in home repo
 
 ## Function section
 
