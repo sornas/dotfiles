@@ -1,0 +1,43 @@
+# spawn programs
+
+super + Return
+    alacritty
+
+super + shift + Return
+    alacritty
+
+super + p
+    rofi -show drun
+
+super + shift + f
+    flameshot gui
+
+super + shift + r
+    peek
+
+super + e
+    emacsclient -c -a ''
+
+super + shift + w
+    xkbcomp -w 0 /home/gustav/.config/moonlander.xkb $DISPLAY; xset r rate 150 38; notify-send "moonlander.xkb loaded"
+
+super + shift + e
+    xkbcomp -w 0 /home/gustav/.config/xkbmap $DISPLAY; xset r rate 140 38; notify-send "xkbmap loaded"
+
+# super + shift + t
+#     st taskwarrior-tui
+
+XF86AudioRaiseVolume
+    pactl set-sink-mute @DEFAULT_SINK@ false; pactl set-sink-volume @DEFAULT_SINK@ "+1%"; kill -35 $(pidof dwmblocks)
+
+XF86AudioLowerVolume
+    pactl set-sink-mute @DEFAULT_SINK@ false; pactl set-sink-volume @DEFAULT_SINK@ "-1%"; kill -35 $(pidof dwmblocks)
+
+shift + XF86AudioRaiseVolume
+    pactl set-sink-mute @DEFAULT_SINK@ false; pactl set-sink-volume @DEFAULT_SINK@ "+5%"; kill -35 $(pidof dwmblocks)
+
+shift + XF86AudioLowerVolume
+    pactl set-sink-mute @DEFAULT_SINK@ false; pactl set-sink-volume @DEFAULT_SINK@ "-5%"; kill -35 $(pidof dwmblocks)
+
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle; kill -35 $(pidof dwmblocks)

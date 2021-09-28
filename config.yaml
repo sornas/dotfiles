@@ -12,3 +12,4 @@
     ~/.zshrc:
     ~/.Xresources:
     ~/.xinitrc:
+    ~/.config/sxhkd/sxhkdrc: sxhkdrc
