@@ -7,8 +7,7 @@
 - link:
     ~/.config/fish/config.fish: fish.config.fish
     ~/.gitconfig:
-    ~/.config/sxhkd/sxhkdrc: sxhkdrc
-    ~/.ssh/config: ssh/config
+    ~/.ssh/config: ssh-config
     ~/.zshrc:
     ~/.Xresources:
     ~/.xinitrc:
