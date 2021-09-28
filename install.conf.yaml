@@ -1,13 +1,11 @@
 - clean: ['~']
 
 - link:
-    ~/.gitconfig: gitconfig
+    ~/.gitconfig:
     ~/.ssh/config:
         path: ssh/config
         create: true
     ~/.config/sxhkd/sxhkdrc: sxhkdrc
-    ~/.zshrc: zshrc
-    ~/.Xresources: Xresources
-    ~/.xinitrc: xinitrc
-
-
+    ~/.zshrc:
+    ~/.Xresources:
+    ~/.xinitrc:
