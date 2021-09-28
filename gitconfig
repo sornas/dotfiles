@@ -81,6 +81,6 @@
     aheadBehind = true
     showUntrackedFiles = no
 [github]
-	user = sornas
+    user = sornas
 [init]
-	defaultBranch = main
+    defaultBranch = main
