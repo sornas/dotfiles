@@ -1,0 +1,86 @@
+[user]
+    name  = Gustav Sörnäs
+    email = gustav@sornas.net
+[core]
+    excludesfile = /home/gustav/.config/gitignore
+    #pager = bat
+    # ignoreCase = true  # treat e.g. 'makefile' and 'Makefile' as the same file
+[alias]
+    inject = "!f() { set -e; HASH=`git show $1 --pretty=format:\"%H\" -q`; shift; git commit -m \"fixup! $HASH\" $*; [ -n \"$(git diff-files)\" ] && git stash && DIRTY=1; git rebase $HASH^^ -i --autosquash; [ -n \"$DIRTY\" ] && git stash pop;}; f"  # https://news.ycombinator.com/item?id=9705690
+
+    a   = add
+    ap  = add --patch
+    ai  = add --interactive
+    an  = add --intent-to-add  # only add the path, not the contents
+    b   = branch
+    bu  = branch -u
+    buu = branch --unset-upstream
+    bf  = branch --force
+    bm  = branch --move
+    bmm = branch --move --force
+    bs  = bisect
+    bsg = bisect good
+    bsb = bisect bad
+    bss = bisect skip
+    bsr = bisect reset
+    c   = commit
+    ce  = commit --allow-empty
+    cl  = clone --recurse-submodules
+    cls = clone --recurse-submodules --depth 1 --no-single-branch --shallow-submodules
+    d   = diff
+    ds  = diff --staged
+    f   = fetch
+    fa  = fetch all
+    lg  = log --graph --branches --tags --pretty=format:'%C(auto)%h%d %aN (%G?) %ar%n%<(50,trunc)%s%Creset%n'
+    m   = merge --no-ff
+    mf  = merge --ff-only
+    p   = push
+    r   = reset
+    rt  = restore
+    rv  = revert
+    s   = switch
+    sd  = switch --detach
+    st  = stash
+    sta = stash apply
+    sui = submodule update --init --recursive
+    w   = worktree
+[commit]
+    verbose = true
+    #gpgsign = true
+[diff]
+    algorithm = minimal
+[format]
+    signature   = ""
+    coverLetter = auto  # create cover-letter if >1 commit/patch
+[gpg]
+    program = /usr/bin/gpg2
+[log]
+    abbrevCommit = true
+[pull]
+    rebase = true
+[push]
+    default = upstream
+[rebase]
+    stat      = true
+    autoStash = true  # might be dangerous
+    #abbreviateCommands = true
+[rerere]
+    enabled = true  # amazing stuff, check git-rerere(1)
+[sendemail]
+    from           = gustav@sornas.net
+    smtpUser       =
+    smtpServer     = "/usr/bin/msmtp"
+    smtpEncryption = tls
+    chainReplyTo   = false
+[stash]
+    showPatch = true  # `git stash show` with only one stash defaults to show patch
+    showStat  = false  # as above but disables stat iff only one stash
+[status]
+    short       = true
+    branch      = true
+    aheadBehind = true
+    showUntrackedFiles = no
+[github]
+	user = sornas
+[init]
+	defaultBranch = main

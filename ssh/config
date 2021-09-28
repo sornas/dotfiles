@@ -1,0 +1,49 @@
+Host lithekod
+        HostName lithekod.lysator.liu.se
+        User gustav
+
+Host liu
+        HostName thinlinc.edu.liu.se
+        User gusso230
+        RemoteCommand TERM=xterm-256color $SHELL
+        RequestTTY yes
+        Compression yes
+        ForwardX11 yes
+
+Host mbp
+        HostName 10.0.0.9
+        RemoteCommand TERM=xterm-256color $SHELL
+        RequestTTY yes
+
+Host sornas
+	HostName git.xn--srns-noa9h.se
+	Port 16872
+	User git
+
+Host vault
+        HostName 192.168.10.44
+        Port 22
+        User gustav
+        RemoteCommand TERM=xterm-256color $SHELL
+        RequestTTY yes
+
+Host github
+        HostName github.com
+        Port 22
+        User git
+
+Host srht
+        HostName git.sr.ht
+        Port 22
+        User git
+
+Host pi
+        HostName 10.0.0.10
+        Port 22
+        User gustav
+        RemoteCommand TERM=xterm-256color $SHELL
+        RequestTTY yes
+
+Host aur.archlinux.org
+        IdentityFile ~/.ssh/aur
+        User aur
