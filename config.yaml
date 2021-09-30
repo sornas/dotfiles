@@ -5,12 +5,12 @@
       create: true
 
 - link:
+    ~/.Xresources:
+    ~/.config/dunst/dunstrc:
     ~/.config/fish/config.fish: fish.config.fish
+    ~/.config/rofi/config.rasi: rofi.config.rasi
+    ~/.config/sxhkd/sxhkdrc: sxhkdrc
     ~/.gitconfig:
     ~/.ssh/config: ssh-config
-    ~/.zshrc:
-    ~/.Xresources:
     ~/.xinitrc:
-    ~/.config/sxhkd/sxhkdrc: sxhkdrc
-    ~/.config/rofi/config.rasi: rofi.config.rasi
-    ~/.config/dunst/dunstrc:
+    ~/.zshrc:
