@@ -1,7 +1,7 @@
 fish_add_path $HOME/.cargo/bin $HOME/.local/bin /opt/bin $HOME/.cabal/bin
 
 alias free='free -m'
-alias ls="exa"
+#alias ls="exa"
 alias paru="paru --skipreview --removemake --cleanafter"
 alias vim="nvim"
 alias x="startx"

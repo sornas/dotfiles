@@ -1,6 +1,8 @@
 delim: " | "
 delim_left: " "
 blocks:
+  - command: "~/.local/bin/statusbar/watson-statusbar"
+    interval: 1
   - command: "~/.local/bin/statusbar/mail"
     interval: 1
   - command: "~/.local/bin/statusbar/mumble_icahasse_status"

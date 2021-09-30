@@ -18,6 +18,9 @@ super + shift + r
 super + e
     emacsclient -c -a ''
 
+super + shift + b
+    bitwarden-desktop
+
 super + shift + w
     xkbcomp -w 0 /home/gustav/.config/moonlander.xkb $DISPLAY; xset r rate 150 38; notify-send "moonlander.xkb loaded"
 

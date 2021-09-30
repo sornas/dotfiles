@@ -10,6 +10,13 @@ Host pi
     RemoteCommand TERM=xterm-256color $SHELL
     RequestTTY yes
 
+Host carbon
+    HostName 10.0.0.100
+    Port 22
+    User gustav
+    RemoteCommand TERM=xterm-256color $SHELL
+    RequestTTY yes
+
 Host vault
     HostName 192.168.10.44
     Port 22
