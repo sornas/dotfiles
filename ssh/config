@@ -28,6 +28,14 @@ Host lithekod
     HostName lithekod.lysator.liu.se
     User gustav
 
+Host liu
+    HostName thinlinc.edu.liu.se
+    User gusso230
+    RemoteCommand TERM=xterm-256color $SHELL
+    RequestTTY yes
+    Compression yes
+    ForwardX11 yes
+
 Host aur
     IdentityFile ~/.ssh/aur
     User aur

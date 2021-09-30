@@ -5,6 +5,7 @@
     ~/.ssh/config:
         path: ssh/config
         create: true
+    ~/.config/sxhkd/sxhkdrc: sxhkdrc
     ~/.zshrc: zshrc
     ~/.Xresources: Xresources
     ~/.xinitrc: xinitrc
