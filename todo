@@ -1,1 +1,4 @@
 include parts of common file in machine-specific files
+execute a shell-script that installs programs via pacman (extension?)
+hierarchical config-files (i.e. base -> arch -> laptop
+                                base -> arch -> desktop)
