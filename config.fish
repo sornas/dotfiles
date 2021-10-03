@@ -1,4 +1,4 @@
-fish_add_path $HOME/.cargo/bin $HOME/.local/bin /opt/bin $HOME/.cabal/bin
+fish_add_path $HOME/.cargo/bin $HOME/.local/bin /opt/bin $HOME/.cabal/bin $HOME/.local/share/gem/ruby/3.0.0/bin
 
 alias free='free -m'
 #alias ls="exa"
