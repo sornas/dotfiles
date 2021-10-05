@@ -30,8 +30,20 @@ super + shift + e
 super + shift + d
     printf "%s" (date --iso-8601=seconds) | xclip -selection clipboard
 
-# super + shift + t
-#     st taskwarrior-tui
+super + shift + l
+    i3lock -i /home/gustav/pic/bg.png
+
+XF86MonBrightnessUp
+    brightnessctl set +5%
+
+XF86MonBrightnessDown
+    brightnessctl set 5%-
+
+shift + XF86MonBrightnessUp
+    brightnessctl set 100%
+
+shift + XF86MonBrightnessDown
+    brightnessctl set 1%
 
 XF86AudioRaiseVolume
     pactl set-sink-mute @DEFAULT_SINK@ false; pactl set-sink-volume @DEFAULT_SINK@ "+1%"; kill -35 $(pidof dwmblocks)
