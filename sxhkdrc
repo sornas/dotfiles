@@ -27,6 +27,9 @@ super + shift + w
 super + shift + e
     xkbcomp -w 0 /home/gustav/.config/xkbmap $DISPLAY; xset r rate 140 38; notify-send "xkbmap loaded"
 
+super + shift + d
+    printf "%s" (date --iso-8601=seconds) | xclip -selection clipboard
+
 # super + shift + t
 #     st taskwarrior-tui
 
