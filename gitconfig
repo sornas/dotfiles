@@ -8,6 +8,9 @@
 [alias]
     inject = "!f() { set -e; HASH=`git show $1 --pretty=format:\"%H\" -q`; shift; git commit -m \"fixup! $HASH\" $*; [ -n \"$(git diff-files)\" ] && git stash && DIRTY=1; git rebase $HASH^^ -i --autosquash; [ -n \"$DIRTY\" ] && git stash pop;}; f"  # https://news.ycombinator.com/item?id=9705690
 
+    lg  = log --graph --pretty=format:'%C(auto)%h%d %aN (%G?) %ar%n%<(50,trunc)%s%Creset%n'
+    lga = log --graph --branches --tags --pretty=format:'%C(auto)%h%d %aN (%G?) %ar%n%<(50,trunc)%s%Creset%n'
+
     a   = add
     ap  = add --patch
     ai  = add --interactive
@@ -31,7 +34,6 @@
     ds  = diff --staged
     f   = fetch
     fa  = fetch all
-    lg  = log --graph --branches --tags --pretty=format:'%C(auto)%h%d %aN (%G?) %ar%n%<(50,trunc)%s%Creset%n'
     m   = merge --no-ff
     mf  = merge --ff-only
     p   = push
@@ -84,3 +86,5 @@
     user = sornas
 [init]
     defaultBranch = main
+[branch]
+	autoSetupMerge = false
