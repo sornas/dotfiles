@@ -12,6 +12,8 @@
     ~/.config/rofi/config.rasi:
     ~/.config/sxhkd/sxhkdrc:
     ~/.gitconfig:
+    ~/.gnupg/gpg-agent.conf:
+    ~/.gnupg/gpg.conf:
     ~/.ssh/config: ssh-config
     ~/.xinitrc:
     ~/.zshrc:
