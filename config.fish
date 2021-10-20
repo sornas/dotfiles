@@ -1,7 +1,9 @@
 fish_add_path $HOME/.cargo/bin $HOME/.local/bin /opt/bin $HOME/.cabal/bin $HOME/.local/share/gem/ruby/3.0.0/bin
 
+set fish_greeting
+
 alias free='free -m'
-#alias ls="exa"
+alias ls="exa"
 alias paru="paru --skipreview --removemake --cleanafter"
 alias vim="nvim"
 alias x="startx"
