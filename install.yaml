@@ -9,6 +9,7 @@
     ~/.config/dunst/dunstrc:
     ~/.config/fish/config.fish:
     ~/.config/fish/functions/fish_prompt.fish:
+    ~/.config/nvim:
     ~/.config/rofi/config.rasi:
     ~/.config/sxhkd/sxhkdrc:
     ~/.gitconfig:
