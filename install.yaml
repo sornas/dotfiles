@@ -22,4 +22,5 @@
     ~/.config/polybar/config: polybar-config
     ~/.config/alacritty/alacritty.yml:
     ~/.config/polybar/scripts/scroll_spotify_status.sh:
+    ~/.config/xkbmap: xkbmap-laptop
     ~/.config/polybar/scripts/get_spotify_status.sh:
