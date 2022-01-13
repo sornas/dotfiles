@@ -18,3 +18,5 @@
     ~/.ssh/config: ssh-config
     ~/.xinitrc:
     ~/.zshrc:
+    ~/.config/bspwm/bspwmrc:
+    ~/.config/polybar/config: polybar-config
