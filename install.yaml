@@ -21,3 +21,5 @@
     ~/.config/bspwm/bspwmrc:
     ~/.config/polybar/config: polybar-config
     ~/.config/alacritty/alacritty.yml:
+    ~/.config/polybar/scripts/scroll_spotify_status.sh:
+    ~/.config/polybar/scripts/get_spotify_status.sh:
